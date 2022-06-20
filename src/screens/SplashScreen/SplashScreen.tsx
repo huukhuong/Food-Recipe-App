@@ -7,7 +7,7 @@ const SplashScreen: FC<INavigationProps> = ({ navigation, route }) => {
 
   useEffect(() => {
     setTimeout(() => {
-      navigation.navigate("HomeScreen");
+      navigation.navigate("Home");
     }, 2000);
   }, []);
 

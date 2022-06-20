@@ -1,12 +1,29 @@
 import { Dimensions } from "react-native";
+
 const { width, height } = Dimensions.get("window");
 
 export const COLORS = {
   white: "#fff",
-  white2: '#F2F2F2',
-  black: "#020202",
-
-  transparent: 'transparent',
+  white2: "#F2F2F2",
+  black: "#000",
+  gray1: "#484848",
+  gray2: "#797979",
+  gray3: "#a9a9a9",
+  gray4: "#d9d9d9",
+  primary100: "#129575",
+  primary80: "#71b1a1",
+  primary60: "#afd3ca",
+  primary40: "#dbebe7",
+  primary20: "#f6faf9",
+  secondary100: "#ff9c00",
+  secondary80: "#ffa61a",
+  secondary60: "#ffba4d",
+  secondary40: "#ffce80",
+  secondary20: "#ffe1b3",
+  rating: "#ffad30",
+  warning: "#FD3654",
+  warning40: "#FFE1E7",
+  transparent: "transparent",
 };
 export const SIZES = {
   // font sizes
@@ -21,7 +38,7 @@ export const SIZES = {
 
   // app dimensions
   width,
-  height
+  height,
 };
 export const FONTS = {
   largeTitle: { fontSize: SIZES.largeTitle },
