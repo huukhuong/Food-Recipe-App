@@ -2,5 +2,5 @@ import { NavigationProp, ParamListBase, RouteProp } from '@react-navigation/nati
 
 export interface INavigationProps {
     navigation: NavigationProp<ParamListBase>,
-    route: RouteProp<ParamListBase, any>
+    route: RouteProp<ParamListBase, any>,
 }
