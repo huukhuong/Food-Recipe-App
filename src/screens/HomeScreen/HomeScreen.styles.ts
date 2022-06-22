@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   headerTextGreeting: {
-    ...AppThemes.FONTS.h1,
+    ...AppThemes.FONTS.h2,
     fontWeight: "bold",
     color: AppThemes.COLORS.black,
   },
@@ -72,7 +72,8 @@ const styles = StyleSheet.create({
     height: 22,
   },
   categoriesWrapper: {
-    paddingVertical: 20
+    paddingTop: 20,
+    paddingBottom: 40
   },
 });
 
