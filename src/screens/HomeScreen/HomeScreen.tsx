@@ -121,6 +121,7 @@ const HomeScreen: FC<INavigationProps> = ({ navigation, route }) => {
 
   const onPressCategoryItem = (index: number) => {
     setCategorySelected(index);
+    setFoods(fakeData[index].items);
   };
 
   const onPressFoodItem = (index: number) => {
@@ -157,7 +158,7 @@ const HomeScreen: FC<INavigationProps> = ({ navigation, route }) => {
               style={styles.searchIcon} />
             <TextInput
               style={styles.searchInput}
-              placeholder={"Search recipe"} />
+              placeholder={"Tìm kiếm công thức"} />
           </View>
           <TouchableOpacity
             style={styles.btnSearchFilter}
@@ -196,7 +197,7 @@ const HomeScreen: FC<INavigationProps> = ({ navigation, route }) => {
                 image={item.image}
                 name={item.name}
                 description={item.description}
-                isSaved={false}
+                isSaved={index % 2 == 0}
                 onPress={() => onPressFoodItem(index)} />
             } />
         </View>

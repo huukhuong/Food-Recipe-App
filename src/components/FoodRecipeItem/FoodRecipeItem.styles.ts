@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
     zIndex: 1000,
     borderRadius: 10,
     paddingHorizontal: 8,
-    paddingVertical: 8
+    paddingVertical: 8,
   },
   cardTitle: {
     color: AppThemes.COLORS.white,
@@ -41,6 +41,22 @@ const styles = StyleSheet.create({
   cardDescription: {
     color: AppThemes.COLORS.white2,
     textAlign: "justify",
+  },
+  btnBookmark: {
+    position: "absolute",
+    backgroundColor: AppThemes.COLORS.white,
+    top: 10,
+    right: 20,
+    borderRadius: 100,
+    width: 36,
+    height: 36,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  bookmarkImage: {
+    width: 20,
+    height: 20,
+    resizeMode: "cover",
   },
 });
 
