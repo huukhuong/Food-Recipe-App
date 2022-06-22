@@ -9,16 +9,17 @@ const styles = StyleSheet.create({
     backgroundColor: AppThemes.COLORS.white,
   },
   header: {
+    marginTop: 10,
     flexDirection: "row",
-    paddingVertical: 24,
+    paddingVertical: 20,
     alignItems: "center",
     paddingHorizontal: paddingHorizontal,
   },
   headerLeft: {
     flex: 1,
   },
-  headerTextHello: {
-    ...AppThemes.FONTS.h2,
+  headerTextGreeting: {
+    ...AppThemes.FONTS.h1,
     fontWeight: "bold",
     color: AppThemes.COLORS.black,
   },
@@ -67,8 +68,11 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   iconFilter: {
-    width: 24,
-    height: 24,
+    width: 22,
+    height: 22,
+  },
+  categoriesWrapper: {
+    paddingVertical: 20
   },
 });
 
